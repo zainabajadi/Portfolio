@@ -1,195 +1,229 @@
 /* Style for mobile view to make h1 fit downward*/
 
 @media only screen and (max-width: 768px) {
-    .home-content h1 {
-        margin-top: 100px;
-        text-align: center; 
-    }
-    .home-content h3 {
-        margin-top: 333px;
-    }
-    
-    @media (max-width: 767px) {
-        body, html .home-content {
-          height: 100%;
-          
-        }
-        body {
-          background: #0c1022;
-          background: linear-gradient(to right, #070539, #000000 40%, #0d0d3d);
-          color: #fff;  
-        }
-      }      
 
-      .home-img {
-        margin-top: -900px;
-        margin-left: -1000;
-        z-index: -1;
+  .navbar-toggle {
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 250px;
+
+  }
+  
+  .navbar {
+    display: none;
+  }
+  
+  .navbar.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    padding: 20px;
+  }
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .home-content h1 {
+      margin-top: 100px;
+      text-align: center; 
+  }
+  .home-content h3 {
+      margin-top: 15px;
+  }
+  
+  @media (max-width: 767px) {
       
-    }
-    
+      body {
+        background: #0c1022;
+        background: linear-gradient(to right, #070539, #000000 40%, #0d0d3d);
+        color: #fff;  
+      }
+    }      
+
+    .home-img {
+      margin-top: -100px;
+      margin-left: 50px;
+      z-index: -1; 
+  }
+  
 }
 
 /* PAGE 2 */
 
-
-
 @media only screen and (max-width: 768px) {
- 
-    .bio {
-        padding-top: 50px;
-      }
-    .box p {
-        text-align: center;
-        word-wrap: break-word; /* or overflow-wrap: break-word; */
-        font-size: 4px;
-      }
-      .box-container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-    
-      .box {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 10px;
-        align-items: center;
-      }
-      
-  .box img {
-    width: 50%;
-    height: 50%;
-    max-width: 30%;
-    object-fit: contain;
-  }
-  
+
+  .bio {
+      padding-top: 50px;
+      text-align: center;
+      margin-left: 150px;
+    }
+
+    #About p {
+      font-size: 13px;
+
+    }
+
   .box p {
-    margin-top: 10px;
-    font-size: 14px;
-  }
-
-  
-  }
-
-  /* PAGE 3 SKILLS */
-  
-  @media only screen and (max-width: 450px) {
-    section#Skills {
-      margin-top: 1150px;
-        text-align: center;
-        width: 100%;
-        z-index: -1;
+      text-align: center;
+      font-size: 4px;
     }
-
-    .skillshead {
-        margin-bottom: -200px;
-      }
-    
-    .skillshead h1 {
-      font-size: 28px;
-    }
-    
-    .skillshead p {
-      font-size: 16px;
-    }
-    
-    .circle {
-      width: 80px;
-      height: 80px;
-    }
-    
-    .circle img {
-      width: 60px;
-    }
-    
-    .skillbox-container {
-      display: flex;
-      flex-wrap: wrap;
+    .box-container {
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 20px;
-      text-align: center;
     }
-
-  }
   
-  /* PAGE 4 DESIGN SECTION */
-  @media (max-width: 767px) {
-    #Design {
-      margin-top: 1100px; /* adjust as needed */
-      width: 123%;
-      background: linear-gradient(to right, #070539, #000000 40%, #0d0d3d);
+    .box {
+      width: 100%;
+      margin-left: 50px;
+      margin-right: auto;
+      margin-bottom: auto;
+      align-items: center;
     }
-  }
+    
+.box img {
+  width: 90%;
+  height: 50%;
+  max-width: 30%;
+  object-fit: contain;
+}
 
-/* CONTACT ME */
-@media (max-width: 768px) {
-    #Contact {
-        background-color: #f7f7f7;
-        padding: 50px;
-        text-align: center;
-        margin-left: 100px;
-      }
-      
-      .contact-me {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        max-width: 800px;
-        margin: 0 auto;
-      }
-      
-      .contact-rect {
-        background-color: #fff;
-        padding: 20px;
-        margin: 10px;
-        border-radius: 5px;
-        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-        text-align: center;
-        width: 250px;
-      }
-      
-      .contact-rect img {
-        width: 50px;
-        margin-bottom: 10px;
-      }
-      
-      .contact-rect p {
-        font-size: 1.2rem;
-        font-weight: bold;
-        margin: 0;
-      }
-      
-      @media screen and (max-width: 768px) {
-        .contact-rect {
-          width: 100%;
-        }
-      }  
-  }
-
-  @media only screen and (max-width: 768px) {
-    /* Targets screens with a maximum width of 768px, which is typically a mobile device */
-    section#Contact {
-      background: linear-gradient(to right, #070539, #000000 40%, #0d0d3d);
-      z-index: -1;
-      /* This sets a gradient background that goes from blue (#0072ff) at the top to light blue (#00c6ff) at the bottom */
-    }
-  }
-  
-/* FOOTER */
-@media only screen and (max-width: 767px) {
-    .footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        display: flex;
-        align-items: center;
-    }
-
+.box p {
+  margin-top: 0px;
+  font-size: 14px;
+}
 
 
 }
 
+/* PAGE 3 SKILLS */
+
+@media only screen and (max-width: 768px) {
+  #Skills {
+    margin-top: 1150px;
+      text-align: center;
+      z-index: -1;
+      margin-left: 100px;
+  }
+
+  .skillshead {
+      margin-bottom: -255px;
+    }
+  
+  .skillshead h1 {
+    font-size: 48px;
+  }
+  
+  .skillshead p {
+    font-size: 16px;
+  }
+  
+  .circle {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .circle img {
+    width: 60px;
+  }
+  
+  .skillbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    text-align: center;
+
+  }
+
+}
+
+/* PAGE 4 DESIGN SECTION */
+@media (max-width: 767px) {
+  #Design {
+    margin-top: 1100px; /* adjust as needed */
+    width: 123%;
+    background: linear-gradient(to right, #070539, #000000 40%, #0d0d3d);
+  }
+}
+
+/* CONTACT ME */
+@media (max-width: 768px) {
+  #Contact {
+      background-color: #f7f7f7;
+      padding: 50px;
+      text-align: center;
+      margin-left: 100px;
+    }
+    
+    .contact-me {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .contact-rect {
+      background-color: #fff;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 250px;
+    }
+    
+    .contact-rect img {
+      width: 50px;
+      margin-bottom: 10px;
+    }
+    
+    .contact-rect p {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 0;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .contact-rect {
+        width: 100%;
+      }
+    }  
+}
+
+@media only screen and (max-width: 768px) {
+  /* Targets screens with a maximum width of 768px, which is typically a mobile device */
+  section#Contact {
+    background: linear-gradient(to right, #070539, #000000 40%, #0d0d3d);
+    z-index: -1;
+    /* This sets a gradient background that goes from blue (#0072ff) at the top to light blue (#00c6ff) at the bottom */
+  }
+}
+
+/* FOOTER */
+@media only screen and (max-width: 767px) {
+  .footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+  }
+
+
+
+}
