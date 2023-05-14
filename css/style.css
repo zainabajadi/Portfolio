@@ -51,6 +51,28 @@ nav a:hover{
     color: #007bff;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar a {
+    margin: 0 20px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+
+.navbar-toggle {
+    display: none;
+  }
 
 /* nav mobile view testing */
 

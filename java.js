@@ -1,6 +1,12 @@
-const navbarToggle = document.querySelector('.navbar-toggle');
-const navbar = document.querySelector('.navbar');
+const navbarLinks = document.querySelectorAll('.navbar a');
 
-navbarToggle.addEventListener('click', function() {
-  navbar.classList.toggle('active');
+navbarLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    const sectionId = link.getAttribute('href');
+    const section = document.querySelector(sectionId);
+
+    section.scrollIntoView({ behavior: 'smooth' });
+  });
 });
+
+
